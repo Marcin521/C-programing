@@ -31,22 +31,18 @@ int main(){
 			printf("\n podaj a[%d, %d] ", i ,j);
 			scanf("%d", &a[i][j]);
 			
-			
-			if(min>a[i][j]){
-			
-				min=a[i][j];		
-			}									
-			
+				if(min>a[i][j]){
+					min=a[i][j];		
+				}									
 									
 			}						
 		}
-				printf("\n =======");
-				printf("\n = min %d", min);
-				printf("\n = i %d", i);
-				printf("\n = j %d", j);
-				printf("\n =======");
-					
-	
+		
+	printf("\n =======");
+	printf("\n = min %d", min);
+	printf("\n = i %d", i);
+	printf("\n = j %d", j);
+	printf("\n =======");
 	printf("\n");
 	
 	//drukowanie macierzy
