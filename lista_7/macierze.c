@@ -19,7 +19,7 @@ int main() {
 
 int wczyt(int n, int m){
 	
-	int a[10][10], i, j;
+	int a[10][10], b[10][10], i, j;
 	
 	//wype³nianie macierzy
 		for(i=0; i<m; i++){
@@ -32,11 +32,38 @@ int wczyt(int n, int m){
 		}
 		}
 	
+		printf("\n");
+	
+		//wype³nianie macierzy
+		for(i=0; i<m; i++){
+		
+		for(j=0; j<n; j++){
+		
+			printf("\n podaj b[%d, %d] ", i ,j);
+			scanf("%d", &b[i][j]);
+							
+		}
+		}
+	
+		printf("\n");
+	
 	//drukowanie wyniku
 		for(i=0; i<m;i++)
 		{
 			for(j=0; j<n; j++){
 				printf(" %d ", a[i][j]);
+			}
+			printf(" \n");
+			
+		}
+	
+	printf("\n");
+		
+	//drukowanie wyniku
+		for(i=0; i<m;i++)
+		{
+			for(j=0; j<n; j++){
+				printf(" %d ", b[i][j]);
 			}
 			printf(" \n");
 			
