@@ -37,7 +37,7 @@ int main() {
 	
 	for(i=0; i<5; i++){
 		
-		printf("\n %4d", tab1[i]);
+		printf(" %4d", tab1[i]);
 		
 	}
 	
