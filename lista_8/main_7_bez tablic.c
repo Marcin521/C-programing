@@ -1,8 +1,32 @@
 #include <stdio.h>
 #include <stdlib.h>
+/*
+Zad. 8.
+ 
+Napisz funkcjê, która znajduje sumê elementów 
+oraz sumê wartoœci bezwzglêdnych elementów tablicy.
+*/
 
-/* run this program using the console pauser or add your own getch, system("pause") or input loop */
+void exchenge(int *x, int *y){
+	
+	int c;
+	
+	c=*x;
+	*x=*y;
+	
+	*y=c;
+	
+	printf("x %d", *x);
+	printf("\n y %d", *y);
+	
+}
 
-int main(int argc, char *argv[]) {
+int x=5;
+int y=8;
+
+int main() {
+	
+	exchenge(&x, &y);
+	
 	return 0;
 }
