@@ -14,7 +14,7 @@ void exchange(int A[], int B[]){
 	
 	for (i=0; i<5; i++){
 	
-		A[i] = rezA[i];
+		rezA[i] = A[i];
 		A[i] = B[i];
 		
 		B[i] = rezA[i]; 
