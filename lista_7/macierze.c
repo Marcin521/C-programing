@@ -1,4 +1,4 @@
-#include <stdio.h>
+ko#include <stdio.h>
 #include <stdlib.h>
 
 
