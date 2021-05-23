@@ -23,7 +23,7 @@ int main() {
 				R=R+(1/r);		
 			
 			}
-		
+
 		printf("podaj R1 (szeregowo) ");
 		scanf("%f", &R1);
 		
