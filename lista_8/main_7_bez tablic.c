@@ -1,10 +1,10 @@
 #include <stdio.h>
 #include <stdlib.h>
 /*
-Zad. 8.
+Zad. 7.
  
-Napisz funkcjê, która znajduje sumê elementów 
-oraz sumê wartoœci bezwzglêdnych elementów tablicy.
+Napisz program, w którym funkcja 
+bêdzie zamienia³a wartoœci zmiennych
 */
 
 void exchenge(int *x, int *y){
