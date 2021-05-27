@@ -11,8 +11,8 @@ U¿yj funkcji, wykorzystuj¹cej notacjê wskaŸnikow¹.
 
 void Copy(int *tab, /*int *c, int *b,*/ int m) {
 
-    int c[5];
-    int b[5];
+    int c[m];
+    int b[m];
     int i;
 
     for (i = 0; i < m; i++) {
@@ -28,10 +28,10 @@ void Copy(int *tab, /*int *c, int *b,*/ int m) {
     }
 }
 
+	int m, i;
 
 int main() {
 
-	int m, i;
 	m=5;
 
 	int a[] ={1, 2, 3, 4, 5};
