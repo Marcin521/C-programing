@@ -19,11 +19,11 @@ void Copy(int *tab, /*int *c, int *b,*/ int m) {
         
 		
 		c[i] = tab[i];
-        printf("c")
+        printf("c");
 		printf(" %d", c[i]);
         b[i] = tab[i];
-        printf("d");
-		printf(" %d", b[i]);
+        printf(" d");
+		printf(" %d \n", b[i]);
         
     }
 }
@@ -31,13 +31,17 @@ void Copy(int *tab, /*int *c, int *b,*/ int m) {
 
 int main() {
 
-	int m;
+	int m, i;
 	m=5;
 
 	int a[] ={1, 2, 3, 4, 5};
 
 	Copy(a, m);
 	
+	//printf("%i, %i, ", c, b);
+		
+
+
 
 	return 0;
 }
