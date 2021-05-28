@@ -18,8 +18,9 @@ void Copy(int *tab, int m) {
     for (i = 0; i < m; i++) {
         
 		if(tab[i]=!0){
-        	for(j=0; j<m; j++)
-			b[j]=tab[i];
+			
+			b[i]=tab[i];
+			printf(" %d", b[j]);
 		}
         
     }
@@ -27,18 +28,28 @@ void Copy(int *tab, int m) {
 
 int i, j, m;
 
+
 int main() {
 
 	printf("wprwowadŸ rozmiar macierzy: ");
     scanf("%d", &m);
+
+	int a[m];
 	
 	for(i = 0; i < m; i++) {
     	for(j = 0; j < m; j++) {
 
     		printf("%d ", rand()%10);
+    		a[j]=rand()%10;
     	}
-    	printf("\n");
+    	printf("\n");	
 	
+	}
+
+	printf("\n");
+	
+	Copy(a, m);
+
 	return 0;
-}
+
 }
