@@ -17,7 +17,7 @@ void Copy(int *tab, int m) {
 
     for (i = 0; i < m; i++) {
         
-		if(tab[i]=!0){
+		if(tab[i]!=0){
 			
 			b[i]=tab[i];
 			printf(" %d", b[j]);
