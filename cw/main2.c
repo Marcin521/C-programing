@@ -10,23 +10,26 @@
 		char imie [20];
 		int numer;
 		char tytul [100];
-		int liczba;
+
 	
 	}tablica[4],t;
 
 
 
 	
-	FILE *zapis;
+
 	int main()
 	{	
+	
+		FILE *zapis;
+	
 	int i, w;
 	
 	
 	
 	
 	
-	for(i=0;i<4;i++)
+	for(i=0;i<2;i++)
 	{
 	
 		printf("\npodaj nazwisko  ");
@@ -43,11 +46,11 @@
 	
 	}
 	
-		zapis=fopen ("d:/kurs.txt", "w");
+		zapis=fopen ("d:kurs.txt", "w");
 		fprintf(zapis, "%s.%s.%d.%s\n", tablica[i].nazwisko, tablica[i].imie, tablica[i].numer, tablica[i].tytul);
 		fclose(zapis);
 		printf("\n\n\n");
 		system ("pause");
 		
-	  	return 0;
+	
 	}
