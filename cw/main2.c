@@ -1,7 +1,6 @@
-#include <stdio.h>
-#include <stdlib.h>
-#include <conio.h>
-
+ #include <stdio.h>
+ #include <stdlib.h>
+ #include <errno.h>
 
 	
 	struct Tablica
@@ -21,8 +20,7 @@
 	int main()
 	{	
 	
-		FILE *zapis;
-	
+   	FILE *plik; 
 	int i, w;
 	
 	
@@ -45,12 +43,18 @@
 		scanf("%s", &tablica[i].tytul);
 	
 	}
-	
-		zapis=fopen ("d:kurs.txt", "w");
-		fprintf(zapis, "%s.%s.%d.%s\n", tablica[i].nazwisko, tablica[i].imie, tablica[i].numer, tablica[i].tytul);
-		fclose(zapis);
-		printf("\n\n\n");
-		system ("pause");
+
+			
 		
+		int b;
+		b=1;
+		
+		plik =fopen("tekst.txt", "w");
+	  	fprintf(plik, "%s.%s.%d.%s\n", tablica[b].nazwisko, tablica[b].imie, tablica[b].numer, tablica[b].tytul);
+		fclose(plik);
+
+}
+   
+
 	
-	}
+
